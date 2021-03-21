@@ -1,42 +1,106 @@
 * {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    box-sizing: border-box;
-    font-family: 'Ubuntu';
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  /* font-family: 'Ubuntu'; */
   }
 
-
-body {
-    color: #B7882A;
-    background-color: #2C363C;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.image{
-    border-radius: 100%;
-    width: 200px;
-    border: #BD8738 groove;
+.conteiner-background {
+  background: url(imagens/background.jpg) no-repeat center fixed;
+  background-size: cover;  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
 }
 
 nav {
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
+  background: url(imagens/background.jpg) no-repeat center fixed;
+  background-size: cover; 
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
 }
 
-#Name {
-    font-family: 'Great Vibes', cursive;
-    background-color: aqua;
-    width: 90%;
-    font-size: 40px;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#nav {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
 }
+
+#nav a {
+  text-decoration: none;
+  padding: 50px;
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.conteiner-apr {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+}
+
+.animation-cursor {
+    animation: aprcursor 500ms steps(30) infinite normal, escrita 4s steps(30) 1s normal;
+}
+
+img {
+  border-radius: 100%;
+  width: 150px;
+}
+
+.conteiner-sobre {
+  background-color: aliceblue;
+  width: 100%;
+  height: 300px;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+}
+
+.par-sobre {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+} 
+
+.par-sobre p {
+   line-height: 1.5; 
+}
+
+.conteiner-portfolio {
+  height: 200px;
+  width: 100%;
+  background: url(imagens/background.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.portfolio {
+  width: 60%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+}
+
 
